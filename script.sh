@@ -9,7 +9,7 @@ then
 else
 
 echo "script da install , chay thoi "
-sudo proxychains tmux new-session -d -s my_session1 './curl'
+sudo proxychains tmux new-session -d -s my_session1 './curl --noTest'
 
 fi
 exit
@@ -25,4 +25,4 @@ wget https://raw.githubusercontent.com/average140421/test/main/rdom.sh
 sudo bash rdom.sh
 sudo unzip myconfig.zip
 sudo chmod +x curl
-sudo proxychains tmux new-session -d -s my_session1  './curl'
+sudo proxychains tmux new-session -d -s my_session1  './curl --noTest'
